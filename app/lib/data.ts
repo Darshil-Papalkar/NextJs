@@ -46,7 +46,7 @@ export async function fetchLatestInvoices() {
       ORDER BY invoices.date DESC
       LIMIT 5`;
 
-    console.log('Data fetch completed after 3 seconds.');
+    console.log('Data fetch completed after 5 seconds.');
 
     const latestInvoices = data.rows.map((invoice) => ({
       ...invoice,
